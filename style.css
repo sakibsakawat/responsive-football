@@ -4,13 +4,14 @@
 body{
     margin:0;
     padding:0;
-    background-color:  #2D25A0;
+    
     font-family: 'Poppins', sans-serif;
 }
 .header-area{
-    width:82%;
+    max-width:85%;
     height:470px;
     padding:100px;
+    background-color:  #2D25A0;
 }
 .left-right{
     width:95%;
@@ -32,14 +33,23 @@ body{
     font-size:50px;
     line-height: 40px;
 }
-
-
-.left-head-area>a{
+.button{
     text-decoration:none;
     color: white;
     background-color:#E02C6D;
     padding: 10px 24px;
+    margin:20px 0 0 0;
+    transition: 0.5s ease;
 }
+.button:hover{
+    color: #E02C6D;
+    border:3px solid #E02C6D;
+    background-color:rgba(255, 255, 255, 0);
+}
+.button>span{
+    margin-left:5px;
+}
+
 
 .right-head-area>img{
     width:500px;
@@ -50,7 +60,7 @@ body{
 }
 .players-area{
     width:100%;
-    height:340vh;
+    height:1000px;
     display:inline-block;
     background-color:white;
 }
@@ -70,6 +80,9 @@ body{
     margin: 48px 210px 27px 117px;
 
 }
+.players-area>.extra{
+    margin-top:71px;
+}
 .small-container{
     width:330px;
     height:441px;
@@ -77,4 +90,34 @@ body{
     border: 1px solid white;
     margin:0 24px 0;
     box-shadow:5px 5px 40px rgba(0, 0, 0, 0.15); ;
+}
+.highlight-area{
+    max-width:100%;
+    height:500px;
+    display:inline-block;
+    margin: 100px 0 0 0;
+}
+.highlight-area img{
+    width:500px;
+    height:350px;
+}
+.highlight-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:303px 182px 35px 186px;
+
+}
+.highlight-small-container{
+    width:445px;
+    height:441px;
+    padding:15px;
+   
+}
+.highlight-small-container>h1{
+    font-size: 2.5em;
+}
+.highlight-small-container>p{
+    padding-bottom: 10px;
+    color: #6C6C6C;
 }
