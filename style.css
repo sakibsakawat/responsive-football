@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-
+/* -------------------------------------------------------------------------------
+                         body style start from here
+----------------------------------------------------------------------------------*/
 body{
     margin:0;
     padding:0;
     
     font-family: 'Poppins', sans-serif;
 }
+
+/* -------------------------------------------------------------------------------
+                         header area style start from here
+----------------------------------------------------------------------------------*/
+
 .header-area{
-    max-width:85%;
+    max-width:100%;
     height:470px;
     padding:100px;
     background-color:  #2D25A0;
 }
 .left-right{
-    width:95%;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -58,6 +65,10 @@ body{
     
 
 }
+
+/* -------------------------------------------------------------------------------
+                         players style start from here
+----------------------------------------------------------------------------------*/
 .players-area{
     width:100%;
     height:1000px;
@@ -91,16 +102,24 @@ body{
     margin:0 24px 0;
     box-shadow:5px 5px 40px rgba(0, 0, 0, 0.15); ;
 }
+
+
+/* -------------------------------------------------------------------------------
+                         highlight area style start from here
+----------------------------------------------------------------------------------*/
+
 .highlight-area{
     max-width:100%;
-    height:500px;
+    height:873px;
     display:inline-block;
     margin: 100px 0 0 0;
 }
+
 .highlight-area img{
     width:500px;
-    height:350px;
+    height:364px;
 }
+
 .highlight-container{
     display:flex;
     justify-content:space-between;
@@ -121,3 +140,180 @@ body{
     padding-bottom: 10px;
     color: #6C6C6C;
 }
+
+/* -------------------------------------------------------------------------------
+                        footer area style start from here
+----------------------------------------------------------------------------------*/
+
+.footer-area{
+    width:100%;
+    height:150px;
+    
+    
+}
+.footer-area-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-container>img{
+    width:386px;
+    height:113px;
+}
+.fa-container>.fab{
+    font-size: 30px;
+    color: #E02C6D;
+    padding:10px;
+    border-radius:10px;
+    transition: 1s ease;
+}
+.fa-container>.fab:hover{
+    color: white;
+   background-color:#E02C6D;
+   
+}
+
+/* -------------------------------------------------------------------------------
+                         media queriey style start from here
+----------------------------------------------------------------------------------*/
+/* For Mobile device */
+@media only screen and (max-width:688px){
+.header-area{
+    max-width:100%;
+    height:650px;
+    padding:0;
+}
+
+.left-right{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.left-right>div{
+    width:66%;
+    padding: 0 100px 0 0;
+    margin:15px 0 30px 0 ;
+}
+.left-head-area{
+    width: 270px;
+    
+}
+.left-head-area>h1{
+    width:310px;
+    color:white;
+    font-weight:700;
+    font-size:40px;
+    line-height: 40px;
+}
+
+.right-head-area>img{
+    width:383px;
+    height:286px;
+    padding-left:0;
+    
+}
+
+/* -------------------------------------------------------------------------------
+                      players area media queriey style start from here
+----------------------------------------------------------------------------------*/
+
+
+.players-area{
+     width:100%;
+    height:1000px;
+}
+.players-area>.extra{
+    margin-top:40px;
+}
+.gap{
+    margin-bottom: 30px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px 117px 10px 117px;
+}
+.small-container{
+    width:303px;
+    height:440px;
+}   
+
+/* -------------------------------------------------------------------------------
+                      highlight area media queriey style start from here
+----------------------------------------------------------------------------------*/
+
+.highlight-area{
+    max-width:100%;
+    height:873px; 
+    margin: 977px 0 0 0;
+    overflow: hidden;
+    
+
+}
+
+.highlight-container{
+    width: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+.highlight-small-container{
+    width:368px;
+    height:328px;
+    padding:15px;
+   
+}
+.highlight-small-container>h1{
+   font-size:30px;
+}
+.highlight-small-container>p{
+    width: 300px;
+    padding-bottom: 10px;
+    color: #6C6C6C;
+}
+.highlight-area img{
+    width:331px;
+    height:258px;
+    margin-bottom:100px;
+}
+
+
+/* -------------------------------------------------------------------------------
+                      footer area media queriey style start from here
+----------------------------------------------------------------------------------*/
+
+.footer-area{
+    width:100%;
+    height:400px;
+   
+}
+.footer-area-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top:200px;
+     
+}
+
+.fa-container>img{
+    width:271px;
+    height:63px;
+}
+.fa-container>img,.fab{
+    margin-bottom:0;
+    
+}
+}
+
